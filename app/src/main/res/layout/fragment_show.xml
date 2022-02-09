@@ -20,7 +20,7 @@
             android:background="@drawable/show_text_shape"
             android:padding="15dp"
             android:maxLines="1"
-            android:textColorHint="#D1D1D1"
+            android:textColorHint="@color/black"
             android:layout_marginTop="10dp"
             android:id="@+id/shwTitle"/>
         <TextView
@@ -30,7 +30,7 @@
             android:background="@drawable/show_text_shape"
             android:padding="15dp"
             android:maxLines="1"
-            android:textColorHint="#D1D1D1"
+            android:textColorHint="@color/black"
             android:layout_marginTop="10dp"
             android:id="@+id/shwSubTitle"/>
         <TextView
@@ -40,7 +40,7 @@
             android:hint="Notes"
             android:background="@drawable/show_text_shape"
             android:padding="15dp"
-            android:textColorHint="#D1D1D1"
+            android:textColorHint="@color/black"
             android:layout_marginTop="10dp"
             android:id="@+id/shwNotes"/>
 

@@ -20,7 +20,7 @@
             android:background="@drawable/edit_text_shape"
             android:padding="15dp"
             android:maxLines="1"
-            android:textColor="#D1D1D1"
+            android:textColor="@color/black"
             android:layout_marginTop="10dp"
             android:id="@+id/edtTitle"/>
         <EditText
@@ -30,7 +30,7 @@
             android:background="@drawable/edit_text_shape"
             android:padding="15dp"
             android:maxLines="1"
-            android:textColor="#D1D1D1"
+            android:textColor="@color/black"
             android:layout_marginTop="10dp"
             android:id="@+id/edtSubTitle"/>
         <EditText
@@ -40,7 +40,7 @@
             android:background="@drawable/edit_text_shape"
             android:padding="15dp"
             android:maxLines="1"
-            android:textColor="#D1D1D1"
+            android:textColor="@color/black"
             android:layout_marginTop="10dp"
             android:id="@+id/edtNotes"/>
 
