@@ -34,7 +34,7 @@ class NotesAdapter(val requireContext: Context, val notesList: List<Notes>) : Re
         //val checkTitle=holder.binding.notesSubTitle.toString()
 
         holder.binding.notesTitle.text=notesList[position].title
-        holder.binding.notesSubTitle.text=data.subTitle
+        //holder.binding.notesSubTitle.text=data.subTitle
 
         holder.binding.root.setOnClickListener {
             val action = SecondFragmentDirections.actionSecondFragmentToShowFragment(data)
