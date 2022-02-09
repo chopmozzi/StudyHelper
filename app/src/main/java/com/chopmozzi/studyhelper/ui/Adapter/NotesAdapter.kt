@@ -3,13 +3,16 @@ package com.chopmozzi.studyhelper.ui.Adapter
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.PopupMenu
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.chopmozzi.studyhelper.Model.Notes
+import com.chopmozzi.studyhelper.R
 import com.chopmozzi.studyhelper.databinding.ActivityMainBinding
 import com.chopmozzi.studyhelper.ui.Fragments.HomeFragment
 import com.chopmozzi.studyhelper.ui.Fragments.HomeFragmentDirections
 import com.chopmozzi.studyhelper.databinding.ItemNotesBinding
+import com.chopmozzi.studyhelper.ui.Fragments.SecondFragmentDirections
 
 
 class NotesAdapter(val requireContext: Context, val notesList: List<Notes>) : RecyclerView.Adapter<NotesAdapter.notesViewHolder>() {
@@ -24,7 +27,6 @@ class NotesAdapter(val requireContext: Context, val notesList: List<Notes>) : Re
             )
         )
     }
-    var fragment1 = HomeFragment()
 
 
     override fun onBindViewHolder(holder: notesViewHolder, position: Int) {
@@ -35,11 +37,14 @@ class NotesAdapter(val requireContext: Context, val notesList: List<Notes>) : Re
         holder.binding.notesSubTitle.text=data.subTitle
 
         holder.binding.root.setOnClickListener {
-            val action = HomeFragmentDirections.actionHomeFragmentToEditNotesFragment(data)
+            val action = SecondFragmentDirections.actionSecondFragmentToShowFragment(data)
             Navigation.findNavController(it).navigate(action)
             //Navigation.findNavController(it).navigate(R.id.action_homeFragment_to_editNotesFragment)
         }
+
+
     }
+
 
     override fun getItemCount() = notesList.size
 

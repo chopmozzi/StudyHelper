@@ -42,7 +42,8 @@
             android:maxLines="1"
             android:textColor="@color/black"
             android:layout_marginTop="10dp"
-            android:id="@+id/edtNotes"/>
+            android:id="@+id/edtNotes"
+            android:gravity="top"/>
 
     </LinearLayout>
     <com.google.android.material.floatingactionbutton.FloatingActionButton

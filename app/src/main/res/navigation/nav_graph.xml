@@ -11,11 +11,11 @@
         android:label="Study Helper"
         tools:layout="@layout/fragment_home" >
         <action
+            android:id="@+id/action_homeFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+        <action
             android:id="@+id/action_homeFragment_to_createNotesFragment"
             app:destination="@id/createNotesFragment" />
-        <action
-            android:id="@+id/action_homeFragment_to_editNotesFragment"
-            app:destination="@id/editNotesFragment" />
     </fragment>
     <fragment
         android:id="@+id/createNotesFragment"
@@ -31,11 +31,44 @@
         android:name="com.chopmozzi.studyhelper.ui.Fragments.EditNotesFragment"
         android:label="Edit Study"
         tools:layout="@layout/fragment_edit_notes" >
-        <action
-            android:id="@+id/action_editNotesFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
         <argument
             android:name="data"
             app:argType="com.chopmozzi.studyhelper.Model.Notes" />
+        <action
+            android:id="@+id/action_editNotesFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showFragment"
+        android:name="com.chopmozzi.studyhelper.ui.Fragments.ShowFragment"
+        tools:layout="@layout/fragment_show"
+        android:label="Study!">
+        <action
+            android:id="@+id/action_showFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+        <argument
+            android:name="data"
+            app:argType="com.chopmozzi.studyhelper.Model.Notes" />
+        <action
+            android:id="@+id/action_showFragment_to_editNotesFragment"
+            app:destination="@id/editNotesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.chopmozzi.studyhelper.ui.Fragments.SecondFragment"
+        android:label="Study List"
+        tools:layout="@layout/fragment_second" >
+        <action
+            android:id="@+id/action_secondFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_secondFragment_to_showFragment"
+            app:destination="@id/showFragment" />
+        <action
+            android:id="@+id/action_secondFragment_to_editNotesFragment"
+            app:destination="@id/editNotesFragment" />
+        <argument
+            android:name="subject"
+            app:argType="string" />
     </fragment>
 </navigation>

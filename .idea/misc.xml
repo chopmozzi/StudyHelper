@@ -11,6 +11,7 @@
         <entry key="..\:/Androidstudio/StudyHelper/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1648148148148148" />
         <entry key="..\:/Androidstudio/StudyHelper/app/src/main/res/drawable/show_text_shape.xml" value="0.1648148148148148" />
         <entry key="..\:/Androidstudio/StudyHelper/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Androidstudio/StudyHelper/app/src/main/res/layout/context_menu.xml" value="0.20520833333333333" />
         <entry key="..\:/Androidstudio/StudyHelper/app/src/main/res/layout/fragment_create_notes.xml" value="0.1" />
         <entry key="..\:/Androidstudio/StudyHelper/app/src/main/res/layout/fragment_edit_notes.xml" value="0.33" />
         <entry key="..\:/Androidstudio/StudyHelper/app/src/main/res/layout/fragment_home.xml" value="0.33" />
@@ -18,7 +19,8 @@
         <entry key="..\:/Androidstudio/StudyHelper/app/src/main/res/layout/fragment_show.xml" value="0.33" />
         <entry key="..\:/Androidstudio/StudyHelper/app/src/main/res/layout/item_notes.xml" value="0.20520833333333333" />
         <entry key="..\:/Androidstudio/StudyHelper/app/src/main/res/layout/study_record.xml" value="0.1" />
-        <entry key="..\:/Androidstudio/StudyHelper/app/src/main/res/menu/delete_menu.xml" value="0.1" />
+        <entry key="..\:/Androidstudio/StudyHelper/app/src/main/res/menu/context_menu.xml" value="0.20520833333333333" />
+        <entry key="..\:/Androidstudio/StudyHelper/app/src/main/res/menu/delete_menu.xml" value="0.22" />
       </map>
     </option>
   </component>

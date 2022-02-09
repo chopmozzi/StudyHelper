@@ -21,15 +21,9 @@ class EditNotesFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        //return inflater.inflate(R.layout.fragment_edit_notes, container, false)
+
         binding = FragmentEditNotesBinding.inflate(layoutInflater, container, false)
-        /*viewModel.getNotes().observe(viewLifecycleOwner, {notesList ->
-            binding.editNotes.
-            binding.rcvAllNote.adapter= NotesAdapter(requireContext(),notesList)
-        })*/
-        //binding.edtTitle.setText(viewModel.getNotes().)
-        //setHasOptionsMenu(true)
+
         binding.edtTitle.setText(oldNotes.data.title)
         binding.edtSubTitle.setText(oldNotes.data.subTitle)
         binding.edtNotes.setText(oldNotes.data.notes)
@@ -66,24 +60,8 @@ class EditNotesFragment : Fragment() {
         Toast.makeText(requireContext(), "Notes Updated Successfully", Toast.LENGTH_SHORT).show()
 
         Navigation.findNavController(it!!).navigate(R.id.action_editNotesFragment_to_homeFragment)
+
     }
 
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.delete_menu, menu)
-        super.onCreateOptionsMenu(menu, inflater)
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-
-        if(item.itemId==R.id.menu_delete)
-        {
-
-            viewModel.deleteNotes(oldNotes.data.id!!)
-            //Navigation.findNavController(this.requireView()).navigate(R.id.action_editNotesFragment_to_homeFragment)
-            //viewModel.findNavController().navigate(R.id.action_editNotesFragment_to_homeFragment)
-            //Navigation.findNavController(binding.root).navigate(R.id.action_editNotesFragment_to_homeFragment)
-        }
-        return super.onOptionsItemSelected(item)
-    }
 
 }

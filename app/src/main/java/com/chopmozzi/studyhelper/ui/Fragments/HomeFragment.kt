@@ -30,15 +30,15 @@ class HomeFragment : Fragment() {
         binding= FragmentHomeBinding.inflate(layoutInflater,container,false)
 
 
-        /*viewModel.getSubTitle().observe(viewLifecycleOwner, {notesList->
+        viewModel.getSubTitle().observe(viewLifecycleOwner, {notesList->
             binding.rcvAllNote.layoutManager=GridLayoutManager(requireContext(),1)
             //binding.rcvAllNote.adapter=NotesAdapter(requireContext(), notesList)
             binding.rcvAllNote.adapter=SubAdapter(requireContext(),notesList)
-        })*/
-        viewModel.getNotes().observe(viewLifecycleOwner, {notesList ->
+        })
+        /*viewModel.getNotes().observe(viewLifecycleOwner, {notesList ->
             binding.rcvAllNote.layoutManager=GridLayoutManager(requireContext(),1)
             binding.rcvAllNote.adapter=NotesAdapter(requireContext(),notesList)
-        })
+        })*/
         /*viewModel.getCheckNotes("ddb").observe(viewLifecycleOwner,{notesList->
             binding.rcvAllNote.layoutManager=GridLayoutManager(requireContext(),1)
             binding.rcvAllNote.adapter=NotesAdapter(requireContext(),notesList)

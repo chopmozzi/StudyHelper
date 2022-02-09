@@ -42,8 +42,27 @@
             android:padding="15dp"
             android:textColorHint="@color/black"
             android:layout_marginTop="10dp"
-            android:id="@+id/shwNotes"/>
+            android:id="@+id/shwNotes" />
 
     </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnUpdNotes"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="26dp"
+        android:backgroundTint="@color/teal_200"
+        android:src="@drawable/ic_baseline_update_24"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnTesNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_margin="26dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#4aa8d8"
+        android:src="@drawable/ic_baseline_contact_support_24"
+        android:tint="@color/white"
+        />
 
 </FrameLayout>
